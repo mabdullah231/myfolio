@@ -23,8 +23,15 @@
 }
 
 .section-padding{
-  padding: 10vh 5vw;
+  padding: 25vh 5vw;
 }
+
+@media (max-width: 640px) { /* Adjust the max-width as needed */
+  .section-padding {
+    padding: 10vh 5vw; /* Reduced padding for small screens */
+  }
+}
+
 .theme-text-secondary {
   color: var(--secondary-color);
 }
@@ -38,4 +45,8 @@
 
 .theme-border-secondary {
   border-color: var(--secondary-color);
+}
+
+#workSection{
+  background: url('./assets/Images/doodle\ items.png') cover;
 }

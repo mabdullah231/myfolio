@@ -23,7 +23,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className={`theme-bg-primary z-50 navBar px-[5vw] py-[1.5vh] border border-t-0 border-l-0 border-r-0 border-b-gray-700 fixed top-0 left-0 right-0 transition-all duration-300 ${isScrolled ? 'py-[2vh]' : 'py-[5vh]'}`}>
+    <header className={`theme-bg-primary z-50 navBar px-[5vw] py-[1.5vh] border border-t-0 border-l-0 border-r-0 border-b-gray-700 fixed top-0 left-0 right-0 transition-all duration-300 ${isScrolled ? 'py-[2vh]' : 'py-[5vh]'}`}>
       <nav className="flex justify-between items-center">
         <div className="navBrand text-[#D9D9D9]">
           <h1 className={`transition-all duration-300 ${isScrolled ? 'text-lg' : 'text-2xl'}`}>MyFolio</h1>
@@ -70,7 +70,7 @@ const Header = () => {
           }
         `}
       </style>
-    </div>
+    </header>
   );
 };
 

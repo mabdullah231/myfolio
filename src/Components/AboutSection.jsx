@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import heroRightBG from "../assets/Images/doodle items.png";
-import heroRightVector from "../assets/Images/Group 62.png";
+import aboutRightBG from "../assets/Images/doodle items.png";
+import aboutRightVector from "../assets/Images/Group 62.png";
 
 const AboutSection = () => {
   const [isReadMore, setIsReadMore] = useState(false);
@@ -11,10 +11,10 @@ const AboutSection = () => {
 
   return (
     <section className='flex flex-wrap w-full min-h-screen section-padding' id="about">
-      <div className="heroSectionLeft flex items-center flex-[1] md:flex-[2] min-h-[50vh] order-2 md:order-1 p-4">
-        <div className="flex heroLeftContent gap-4">
-          <div className="heroContent flex flex-col justify-between">
-            <div className="heroHeading">
+      <div className="aboutSectionLeft flex items-center flex-[1] md:flex-[2] min-h-[50vh] order-2 md:order-1 p-4">
+        <div className="flex aboutLeftContent gap-4">
+          <div className="aboutContent flex flex-col justify-between">
+            <div className="aboutHeading">
               <h1 className="font-bold text-4xl sm:text-6xl md:text-6xl lg:text-7xl">
                 About 
                 <span className="theme-text-secondary"> Me</span>
@@ -36,17 +36,17 @@ const AboutSection = () => {
       </div>
 
       {/* Right Section (Moves on top when wrapped) */}
-      <div className="relative heroSectionRight min-w-[30vw] flex items-end justify-center flex-[2] md:flex-[3] p-6 min-h-[50vh] order-1 md:order-2">
+      <div className="relative aboutSectionRight min-w-[30vw] flex items-end justify-center flex-[2] md:flex-[3] p-6 min-h-[50vh] order-1 md:order-2">
         {/* Background Image */}
         <img
-          src={heroRightBG}
+          src={aboutRightBG}
           className="absolute inset-0 w-full h-full object-cover z-0"
           alt="Background Design"
         />
 
         {/* Person Vector (On Top) */}
         <img
-          src={heroRightVector}
+          src={aboutRightVector}
           alt="Person Vector"
           className="relative z-10 w-[250px] h-[200px] md:w-[400px] md:h-[325px] -mb-10 md:-mb-15"
         />
