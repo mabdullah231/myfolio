@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Poppins", serif;
+  /* line-height: 1.5; */
+  font-weight: 400;
+  color: #EEEEEE;
+  background-color: #222831;
+  --primary-color: #222831;
+  --secondary-color: #00ADB5;
+}
+/* .navBar{
+  padding: 2vh 05vw;
+  box-sizing: border-box;
+} */
+ html{
+  scroll-behavior: smooth;
+ }
+.navBrand{
+  font-family: "Oswald", serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.section-padding{
+  padding: 10vh 5vw;
+}
+.theme-text-secondary {
+  color: var(--secondary-color);
+}
+
+.theme-bg-secondary {
+  background-color: var(--secondary-color);
+}
+.theme-bg-primary {
+  background-color: var(--primary-color);
+}
+
+.theme-border-secondary {
+  border-color: var(--secondary-color);
+}
